@@ -1,0 +1,18 @@
+// Variables
+//theme
+$primaryColor : #FDF0D5;
+$secondaryColorRed : #C1121F;
+$secondaryColorBlue : #669BBC;
+$tertiaryColorRed : #780000;
+$tertiaryColorBlue : #003049;
+
+
+
+// Mixins
+
+@mixin flexCenter($dir) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $dirs;
+}
