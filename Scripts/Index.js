@@ -1,6 +1,6 @@
 // Imports
 
-import simpleParallax from 'simple-parallax-js';
+
 
 // Variables
 
