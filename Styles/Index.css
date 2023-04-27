@@ -6,16 +6,52 @@
 
 body {
   background-color: #BD3246;
+  background-image: url(../Assets/Background.svg);
+  background-size: cover;
 }
 
 .nav-bar {
   width: 100%;
-  height: 10rem;
-  background-color: #FDC8AA;
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: "row";
+  justify-content: space-between;
 }
-.nav-bar span {
-  color: #292124;
-  font-size: 10rem;
+.nav-bar a {
+  text-decoration: none;
+  color: #FDC8AA;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.nav-bar .nav-bar-left {
+  margin-left: 2.5rem;
+}
+.nav-bar .nav-bar-left a {
+  margin-right: 1rem;
+}
+.nav-bar .nav-bar-left a:nth-child(1) {
+  color: white;
+  font-size: 2rem;
+  position: relative;
+  padding-right: 1rem;
+}
+.nav-bar .nav-bar-left a:nth-child(1):after {
+  content: "";
+  width: 2px;
+  height: 50px;
+  transform: translate(0, -8px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+}
+.nav-bar .nav-bar-right {
+  margin-right: 2.5rem;
+}
+.nav-bar .nav-bar-right a {
+  margin-left: 1.5rem;
 }
 
 .wrapper {
@@ -29,12 +65,12 @@ body {
 .wrapper .test {
   width: 10rem;
   height: 10rem;
-  border: 5.5px solid #740021;
+  border: 5.5px solid #FDC8AA;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: "column";
-  color: #dcb3c1;
-  font-size: 2rem;
+  color: #FDC8AA;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }/*# sourceMappingURL=Index.css.map */
