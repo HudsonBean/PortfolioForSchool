@@ -15,3 +15,7 @@ $cta2 : #292124;
     align-items: center;
     flex-direction: $dir;
 }
+
+@mixin transitionAll() {
+    transition: all 0.15s ease;
+}

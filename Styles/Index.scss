@@ -38,6 +38,23 @@ body {
         font-size: 1.5rem;
         text-transform: uppercase;
         color: white;
+        position: relative;
+        padding-bottom: 2.5px;
+        &:not(.nav-bar-left a:nth-child(1))::before{ // Select links besides the main
+            content: "";
+            width: 0%;
+            height: 1.5px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            @include transitionAll();
+        }
+        &:not(.nav-bar-left a:nth-child(1)):hover{ // Select links besides the main
+            &::before{
+                width: 100%;
+            }
+        }
     }
 
     .nav-bar-left {
