@@ -10,8 +10,8 @@
 }
 
 body {
-    background-color: $primary2;
-    background-image: url(../Assets/Background.svg);
+    background-color: $cta2;
+    background-image: url(../Assets/test.svg);
     background-size: cover;
 }
 
@@ -30,34 +30,41 @@ body {
     height: 12.5rem;
     @include flexCenter('row');
     justify-content: space-between;
+    background-color: $primary2;
 
     a {
         text-decoration: none;
         color: $primary1;
         font-size: 1.5rem;
         text-transform: uppercase;
+        color: white;
     }
 
     .nav-bar-left {
         margin-left: 2.5rem;
         a {
             margin-right: 1rem;
+
             &:nth-child(1) {
-                color: white;
+                background-color: $primary2;
+                font-weight: 750;
+                text-shadow: 2px 2.5px 0px white;
+                z-index: 1;
                 font-size: 2rem;
                 position: relative;
-                padding-right: 1rem;
+                padding: 1rem;
                 &:after {
                     content: "";
                     width: 2px;
-                    height: 50px;
-                    transform: translate( 0, -8px);
+                    height: 100%;
                     position: absolute;
                     top: 0;
                     right: 0;
                     background-color: white;
+                    box-shadow: 0px 0px 10px white;
                 }
             }
+
         }
     }
 

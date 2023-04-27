@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #BD3246;
-  background-image: url(../Assets/Background.svg);
+  background-color: #292124;
+  background-image: url(../Assets/test.svg);
   background-size: cover;
 }
 
@@ -18,12 +18,14 @@ body {
   align-items: center;
   flex-direction: "row";
   justify-content: space-between;
+  background-color: #BD3246;
 }
 .nav-bar a {
   text-decoration: none;
   color: #FDC8AA;
   font-size: 1.5rem;
   text-transform: uppercase;
+  color: white;
 }
 .nav-bar .nav-bar-left {
   margin-left: 2.5rem;
@@ -32,20 +34,23 @@ body {
   margin-right: 1rem;
 }
 .nav-bar .nav-bar-left a:nth-child(1) {
-  color: white;
+  background-color: #BD3246;
+  font-weight: 750;
+  text-shadow: 2px 2.5px 0px white;
+  z-index: 1;
   font-size: 2rem;
   position: relative;
-  padding-right: 1rem;
+  padding: 1rem;
 }
 .nav-bar .nav-bar-left a:nth-child(1):after {
   content: "";
   width: 2px;
-  height: 50px;
-  transform: translate(0, -8px);
+  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
   background-color: white;
+  box-shadow: 0px 0px 10px white;
 }
 .nav-bar .nav-bar-right {
   margin-right: 2.5rem;
