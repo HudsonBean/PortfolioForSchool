@@ -48,7 +48,7 @@ body {
             &:nth-child(1) {
                 background-color: $primary2;
                 font-weight: 750;
-                text-shadow: 2px 2.5px 0px white;
+                text-shadow: 2.5px 2.8px 0px $primary1;
                 z-index: 1;
                 font-size: 2rem;
                 position: relative;
@@ -70,6 +70,7 @@ body {
 
     .nav-bar-right {
         margin-right: 2.5rem;
+        @include flexCenter('row');
         a {
             margin-left: 1.5rem;
         }
