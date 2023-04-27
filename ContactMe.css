@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gloock', serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: linear-gradient(
+        rgb(30,30,30),
+        rgb(0,0,0)
+    );
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Effect*/
+.underline-effect {
+    position: relative;
+    
+    transition: all 0.25s ease-out;
+}
+.underline-effect::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 0%;
+    height: 2.5px;
+    background-color: white;
+    transition: all 0.25s ease-out;
+}
+.underline-effect:hover {
+    text-shadow: white 0 0 10px;
+    transform: translateY(-2.5px);
+}
+.underline-effect:hover::before {
+    width: 100%;
+    left: 0;
+    background-color: red;
+}
+
+
+
+
+.nav-bar {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(69,69,69,0.69);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-bar-left {
+    display: flex;
+    align-items: center;
+}
+.nav-bar-left a:not(.home-button) {
+    margin-right: 25px;
+}
+.home-button {
+    font-size: 25px;
+    margin-left: 25px;
+    margin-right: 50px;
+    position: relative;
+    isolation: isolate;
+    transition: all 0.25s ease-out;
+}
+.home-button::before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    width: 2.5px;
+    height: 100%;
+    background-color: red;
+    z-index: -1;
+    transition: all 0.25s ease-out;
+}
+.home-button:hover {
+    text-shadow: white 0 0 10px;
+    transform: translateY(-2.5px);
+}
+.home-button:hover::before {
+    width: 100%;
+    right: 0;
+}
+
+
+
+.nav-bar-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar-right div {
+    margin-right: 25px;
+}
+.about-me, .contact-me {
+    padding: 5px 20px 5px 20px;
+    border: rgba(30,30,30,0.7) solid 2.5px;
+    border-radius: 40px;
+}
+.about-me span:first-of-type {
+    padding-right: 10px;
+}
+.contact-me {
+    background-color: black;
+}
+.contact-me span:first-of-type {
+    padding-right: 10px;
+}
+.about-me:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.contact-me:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+.main {
+    width: 100%;
+    height: 51.69em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imsobored {
+    width: 500px;
+    height: 69%;
+    border: white solid 2.5px;
+    border-radius: 40px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main p {
+    color: white;
+    margin-top: 1em;
+    font-size: 35px;
+    position: relative;
+}
+.imsobored p::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    bottom: 0;
+    border-radius: 40px;
+}
+.main-form {
+    width: 90%;
+    height: 80%;
+    margin: 10px;
+    border: white solid 1px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.spacer {
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+}
+.main-form input {
+    height: 15px;
+    width: 50%;
+}
+.main-form textarea {
+    margin-top: 2.5em;
+    width: 50%;
+    height: 40%;
+}
