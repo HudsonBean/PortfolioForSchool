@@ -36,4 +36,5 @@ body {
   flex-direction: "column";
   color: #dcb3c1;
   font-size: 2rem;
+  text-transform: capitalize;
 }/*# sourceMappingURL=Index.css.map */

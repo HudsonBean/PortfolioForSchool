@@ -44,5 +44,6 @@ body {
         @include flexCenter('column');
         color: $cta;
         font-size: 2rem;
+        text-transform: capitalize;
     }
 }
