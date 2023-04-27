@@ -56,6 +56,7 @@ function setVideo(a) {
             return;
         };
     };
+    
 };
 
 let a = document.querySelectorAll(".project-click-detector")
