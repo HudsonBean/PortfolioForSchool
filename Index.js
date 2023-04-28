@@ -1,5 +1,12 @@
 // Project section click detector
-function stopVideo() {
+function stopVideo(e) {
+    //disconnect event
+    if (e.stopPropagation) {
+        e.stopPropagation();   // W3C model
+    } else {
+        e.cancelBubble = true; // IE model
+    };
+    //Do other stopping
     let frame = document.querySelector("#blur-frame");
     let player = document.querySelector(".project-player");
     let video = document.querySelector(".project-video");
@@ -11,6 +18,7 @@ function stopVideo() {
     //Stop video
     video.pause();
     video.currentTime = 0;
+    return;
 };
 function setVideo(a) {
     let frame = document.querySelector("#blur-frame");
@@ -18,7 +26,7 @@ function setVideo(a) {
     let video = document.querySelector(".project-video");
     let source = document.querySelector(".project-video source");
     //Set the src of the video
-    source.setAttribute("src", "../Personal Website Add landing pages and Jump Links/Videos/" + a.toString() + ".mp4");
+    source.setAttribute("src", "./Videos/" + a.toString() + ".mp4");
     //video visuals
     frame.classList.add("blur-frame");
     player.style.display = "flex";
@@ -27,9 +35,11 @@ function setVideo(a) {
     video.load();
     video.play();
     //set up click cancel event
-    window.onclick = function(e) {
-        console.log("Cancel")
-    };
+    window.addEventListener("click", function(event) {
+        if (event.target == this.document.getElementsByClassName("project-player")[0] || event.target == this.document.getElementsByClassName("blur-frame")[0]) {
+            stopVideo(event);
+        }
+    });
     //Set up scroll cancel event
     let origin = document.documentElement.scrollTop
     function check(a,b) {
@@ -44,19 +54,9 @@ function setVideo(a) {
         //console.log(document.documentElement.scrollTop);
         let condition = check(origin, document.documentElement.scrollTop);
         if (condition==true) {
-            //console.log("ahdhahdahdhah")
-            //disconnect event
-            if (e.stopPropagation) {
-                e.stopPropagation();   // W3C model
-            } else {
-                e.cancelBubble = true; // IE model
-            };
-            //fire stop video
-            stopVideo();
-            return;
+            stopVideo(e);
         };
     };
-    
 };
 
 let a = document.querySelectorAll(".project-click-detector")
