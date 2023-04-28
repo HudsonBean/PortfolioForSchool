@@ -289,46 +289,10 @@ body {
 }
 .flow-offset2 {
     width: 100%;
-    height: 32.5em;
+    height: 32.9em;
     background-color: rgb(187, 63, 63);
 }
 
-
-
-.aspirations-section {
-    width: 100%;
-    height: 40em;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1116%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(187%2c 63%2c 63%2c 1)'%3e%3c/rect%3e%3ccircle r='45.73' cx='1331.67' cy='554.98' fill='url(%23SvgjsLinearGradient1117)'%3e%3c/circle%3e%3ccircle r='46.66' cx='303.51' cy='370.37' fill='url(%23SvgjsLinearGradient1118)'%3e%3c/circle%3e%3ccircle r='14.465' cx='1245.19' cy='477.56' fill='rgba(122%2c 32%2c 32%2c 1)'%3e%3c/circle%3e%3ccircle r='26.295' cx='594.95' cy='210.41' fill='url(%23SvgjsLinearGradient1119)'%3e%3c/circle%3e%3ccircle r='45.165' cx='521.1' cy='463.42' fill='url(%23SvgjsLinearGradient1120)'%3e%3c/circle%3e%3ccircle r='16.62' cx='1221.53' cy='316.92' fill='url(%23SvgjsLinearGradient1121)'%3e%3c/circle%3e%3ccircle r='36.66' cx='1200.73' cy='187.06' fill='url(%23SvgjsLinearGradient1122)'%3e%3c/circle%3e%3ccircle r='40.665' cx='820.58' cy='95.53' fill='url(%23SvgjsLinearGradient1123)'%3e%3c/circle%3e%3ccircle r='34.775' cx='156' cy='356.01' fill='rgba(122%2c 32%2c 32%2c 1)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1116'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='1240.21' y1='554.98' x2='1423.13' y2='554.98' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1117'%3e%3cstop stop-color='rgba(187%2c 63%2c 63%2c 1)' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(187%2c 63%2c 63%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='210.19' y1='370.37' x2='396.83' y2='370.37' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1118'%3e%3cstop stop-color='rgba(187%2c 63%2c 63%2c 1)' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(87%2c 18%2c 18%2c 1)' offset='0.91'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='542.36' y1='157.82' x2='647.54' y2='263' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1119'%3e%3cstop stop-color='rgba(236%2c 119%2c 119%2c 1)' offset='0.09'%3e%3c/stop%3e%3cstop stop-color='rgba(97%2c 32%2c 32%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='430.77000000000004' y1='463.42' x2='611.4300000000001' y2='463.42' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1120'%3e%3cstop stop-color='rgba(187%2c 63%2c 63%2c 1)' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(87%2c 18%2c 18%2c 1)' offset='0.91'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1188.29' y1='316.92' x2='1254.77' y2='316.92' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1121'%3e%3cstop stop-color='rgba(192%2c 34%2c 64%2c 1)' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1127.41' y1='187.06' x2='1274.0500000000002' y2='187.06' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1122'%3e%3cstop stop-color='rgba(192%2c 34%2c 64%2c 1)' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='739.25' y1='14.200000000000003' x2='901.91' y2='176.86' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1123'%3e%3cstop stop-color='rgba(236%2c 119%2c 119%2c 1)' offset='0.09'%3e%3c/stop%3e%3cstop stop-color='rgba(97%2c 32%2c 32%2c 1)' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.aspirations-section .title {
-    margin-bottom: 1.5em;
-}
-.aspirations-section div {
-    width: 40%;
-    height: 30em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: white solid 5px;
-    border-radius: 40px;
-}
-.aspirations-section img {
-    width: 70%;
-    height: 250px;
-    border: white solid 2.5px;
-    border-radius: 40px;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-}
-.aspirations-section div p {
-    color: white;
-    width: 70%;
-    margin-bottom: 1.5em;
-}
 
 
 .hidden {
