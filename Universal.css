@@ -1,0 +1,10 @@
+.hidden {
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5);
+}
