@@ -127,10 +127,11 @@ body {
 
 .main {
     width: 100%;
-    height: 51.69em;
+    height: 55.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("./Images/IconGrid.svg");
 }
 .imsobored {
     width: 500px;
