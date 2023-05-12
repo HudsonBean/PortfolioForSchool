@@ -22,11 +22,21 @@
         </div>
     </div>
     <div class="main">
-        <form>
+        <h1>Contact Me!</h1>
+        <form action="https://formsubmit.co/hudsonbeandev@gmail.com" method="POST">
             <h3>CONTACT ME</h3>
             <div class="container">
-                <input type="text" name="name" id="name" placeholder="Your Full Name">
-                <input type="text" name="email" id="email">
+                <input type="hidden" name="_next" value="">
+                <input type="text" name="name" id="name" placeholder="Your Full Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email Address" required>
+                <input type="hidden" name="_subject" value="HIGHSCHOOL WEBSITE🥰">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                
+                <textarea name="message" id="message" rows="10" placeholder="Your Message Here" required></textarea>
+                <div class="submit-btn-wrapper">
+                    <input class="submit-btn" type="submit" value="submit">
+                </div>
             </div>
         </form>
     </div>
