@@ -123,61 +123,58 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-
-
 .main {
     width: 100%;
-    height: 55.5rem;
+    height: 54rem;
+    background-image: url(./Images/IconGrid.svg);
+    background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./Images/IconGrid.svg");
 }
-.imsobored {
+
+form {
     width: 500px;
-    height: 69%;
-    border: white solid 2.5px;
-    border-radius: 40px;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.main p {
-    color: white;
-    margin-top: 1em;
-    font-size: 35px;
-    position: relative;
-}
-.imsobored p::before {
-    content: "";
-    width: 100%;
-    height: 2px;
-    position: absolute;
+    height: 500px;
     background-color: white;
-    bottom: 0;
-    border-radius: 40px;
-}
-.main-form {
-    width: 90%;
-    height: 80%;
-    margin: 10px;
-    border: white solid 1px;
-    border-radius: 40px;
+    border-radius: 10px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 20px 25px 10px black;
 }
-.spacer {
-    margin-top: 2.5em;
-    margin-bottom: 1em;
+
+form h3 {
+    font-size: 1rem;
+    font-weight: 1500;
+    position: relative;
+    padding-left: 0.5rem;
+    height: 20px;
 }
-.main-form input {
-    height: 15px;
-    width: 50%;
+form h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5px;
+    height: 100%;
+    background-color: black;
 }
-.main-form textarea {
-    margin-top: 2.5em;
-    width: 50%;
-    height: 40%;
+
+form input {
+    margin-top: 1.5rem;
+    width: 500px;
+    height: 50px;
+    border: 0px;
+    background-color: rgba(0,0,0,0.075);
+    padding: 0px 10px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
