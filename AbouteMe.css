@@ -15,6 +15,49 @@ body {
     background-attachment: fixed;
 }
 
+/*Animations*/
+@keyframes image-animation {
+    from {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    to {
+        width: 450px;
+        height: 450px;
+        border-radius: 100%;
+        transform: translate(-80px, 170px);
+    }
+}
+
+@keyframes blog-animation {
+    from {
+        width: 0px;
+        height: 0px;
+        border-radius: 0px;
+        transform: translateX(510px);
+    }
+
+    to {
+        width: 450px;
+        height: 450px;
+        border-radius: 10px;
+        margin-right: 1.69rem;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fade-effect {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /*Effect*/
 .underline-effect {
     position: relative;
@@ -131,4 +174,106 @@ body {
     background-image: url(./Images/IconGrid2.svg);
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 5rem;
+    font-weight: 1500;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-design {
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin-left: 1.69rem;
+}
+.background-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    -webkit-mask-image: radial-gradient(circle 750px at 25% 100%, transparent 40%, blue 20%);
+    object-fit: cover;
+    box-shadow: 10px 10px 10px black;
+}
+.foreground-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: image-animation 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.69s forwards;
+    box-shadow: 10px 10px 10px black;
+    object-fit: cover;
+}
+
+
+
+.blog-container {
+    width: 0px;
+    height: 0px;
+    background: white;
+    transform: translateX(510px);
+    animation: blog-animation 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.69s forwards;
+    box-shadow: 10px 10px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blog {
+    width: 95%;
+    height: 95%;
+}
+.blog h2 {
+    font-weight: 1500px;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-effect 1s ease 1s forwards;
+}
+.blog p {
+    color: rgba(0,0,0,0.65);
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-effect 1s ease 1.25s forwards;
+}
+.contact-me-btn {
+    margin-top: 1rem;
+    width: 150px;
+    height: 40px;
+    transition: all 0.15s ease;
+    background-color: rgba(0,0,0,0.075);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-effect 1s ease 1.5s forwards;
+}
+.contact-link {
+    display: block;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 17.5px;
+}
+.contact-me-btn:hover {
+    background-color: rgb(187, 63, 63);
+    color: white;
 }
