@@ -58,3 +58,10 @@ function setVideo(a) {
         };
     };
 };
+
+let a = document.querySelectorAll(".project-click-detector")
+for(let i = 0; i < a.length; i++) {
+    a[i].onclick = function() {
+        setVideo(i+1);
+    };
+}

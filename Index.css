@@ -7,7 +7,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    background-image: linear-gradient(
+    background-image: url(./Images/IconGrid.svg), linear-gradient(
         rgb(30,30,30),
         rgb(0,0,0)
     );
@@ -37,33 +37,25 @@ body {
     }
 }
 
-@keyframes span-a-animation {
+@keyframes span-animation {
     from {
         color: white;
     }
 
     to {
-        color: rgb(58, 167, 218);
+        color: rgb(125,125,125);
     }
 }
 
-@keyframes span-b-animation {
+@keyframes span-underline-animation {
     from {
-        color: white;
+        width: 0%;
+        background-color: white;
     }
 
     to {
-        color: rgb(187, 63, 63);
-    }
-}
-
-@keyframes span-c-animation {
-    from {
-        color: white;
-    }
-
-    to {
-        color: rgb(187, 63, 63);
+        width: 100%;
+        background-color: rgb(187, 63, 63);
     }
 }
 
@@ -235,16 +227,61 @@ body {
 .introduction a:hover .intro-svg{
     width: 57.5px;
     height: 57.5px;
-    
 }
-.hidden-a {
-    animation: span-a-animation 1s ease 0.6s forwards;
+.span-a {
+    font-size: 0;
+    animation: span-animation 1s ease 0.6s forwards;
 }
-.hidden-b {
-    animation: span-b-animation 1s ease 1s forwards;
+.span-a span {
+    font-size: 2rem;
 }
-.hidden-c {
-    animation: span-c-animation 1s ease 1.5s forwards;
+.span-a span:hover {
+    color: rgb(187, 63, 63);
+}
+.span-b {
+    font-size: 0;
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-right: 7px;
+    animation: span-animation 1s ease 1s forwards;
+}
+.span-b span {
+    font-size: 2rem;
+}
+.span-b span:hover {
+    color: rgb(187, 63, 63);
+}
+.span-b::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    animation: span-underline-animation 1s ease 1s forwards;
+}
+.span-c {
+    font-size: 0;
+    position: relative;
+    padding-bottom: 0.5rem;
+    animation: span-animation 1s ease 1.5s forwards;
+}
+.span-c span {
+    font-size: 2rem;
+}
+.span-c span:hover {
+    color: rgb(187, 63, 63);
+}
+.span-c::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    animation: span-underline-animation 1s ease 1.5s forwards;
 }
 
 

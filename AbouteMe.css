@@ -125,38 +125,10 @@ body {
 
 
 
-.about-me-section {
+.main {
     width: 100%;
-    height: 40em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.about-me-section span {
-    color: white;
-    text-shadow: white 0 0 10px;
-    font-size: 1.5em;
-    margin-bottom: 2em;
-}
-.about-me-section div:not(.wrapper) {
-    width: 700px;
-    height: 400px;
-    border: white solid 2.5px;
-    border-radius: 40px;
-    display: flex;
-    align-items: center;
-    padding: 1.5em;
-}
-.about-me-section img {
-    border-radius: 40px;
-    border: white solid 2.5px;
-}
-.wrapper {
-    width: 50%;
-    height: 55%;
-}
-.wrapper p {
-    color: white;
-    margin-left: 1em;
+    height: 100vh;
+    background-image: url(./Images/IconGrid2.svg);
+    background-size: cover;
+    background-attachment: fixed;
 }
